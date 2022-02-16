@@ -20,7 +20,7 @@
 
 ## 2. 구현 방법
 ### Installation (Req-04, Req-05)
-![스프링 초기 설정](https://user-images.githubusercontent.com/40817016/150710285-6afff13e-6829-4f28-9826-c0a981ed0972.png)
+![스프링 초기 설정](https://user-images.githubusercontent.com/40817016/154221723-01283a95-9ca4-4bb8-abc7-ab3b5fc33f4f.png)
 
 ### 개발환경
 * Spring boot 2.5.9 RELEASE 
