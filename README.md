@@ -41,7 +41,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
-		// ETC
+	// ETC
 	implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
 	implementation group: 'org.json', name: 'json', version: '20211205'
 	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'
