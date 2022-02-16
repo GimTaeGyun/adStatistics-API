@@ -19,7 +19,7 @@
 <!-- ※Req-09에서 Swagger JWT 토큰 입력 부분 미구현 => Postman 테스트로 대체. -->
 
 ## 2. 구현 방법
-### Installation (Req-04, Req-05)
+### Installation (Req-01)
 ![스프링 초기 설정](https://user-images.githubusercontent.com/40817016/154221723-01283a95-9ca4-4bb8-abc7-ab3b5fc33f4f.png)
 
 ### 개발환경
