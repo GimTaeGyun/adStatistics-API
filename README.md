@@ -64,7 +64,7 @@ http://localhost:8080/swagger-ui.html#/ <br>
 
 ### 참고
 ※스웨거 참고 블로그: https://antstudy.tistory.com/251 <br>
-※JWT 참고 강의: https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-jwt/dashboard
+※File Upload 참고: https://stackoverflow.com/questions/49845355/spring-boot-controller-upload-multipart-and-json-to-dto
 
 ## 3. 검증 결과 (단위 테스트)
 |TestNo|URL|파라미터|테스트 스텝|입력 데이터|성공 결과|실패 결과|
