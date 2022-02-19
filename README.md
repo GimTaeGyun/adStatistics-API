@@ -1,8 +1,38 @@
-# project_fsn
+# 📄project_fsn
 김태균 - FSN 카울리 채용 과제 
 
+## 목차
 
-## 1. 요구사항 구현 여부
+#### [1. 목적](#link_goal)
+#### [1. 요구사항 구현 여부](#link_rfp)
+#### [2. 구현 방법](#link_impl)
+#### [3. 테스트(JUnit)](#link_test_junit)
+#### [4. 데모 영상](#demo_video)
+#### [5. 성능 테스트](#performance_test)
+#### [6. 문서 링크](#docs_link)
+#### [7. Docker](#docker)
+
+</br>
+
+<a name="link_rfp">  
+	
+## 1. 목적 🏆
+	
+</a>
+
+ - 광고 플랫폼 Rest API 서버 구현 
+ - 날짜, 시간 별 광고 요청 수, 응답 수 , 클릭 수 통계 데이터 응답
+ - 광고 통계 데이터 Json 파일 업로드 기능
+ - Restful API 문서 작성
+ - 테스트 코드 작성
+ - 예외 처리
+
+<a name="link_rfp">  
+	
+## 2. 요구사항 구현 여부
+	
+</a>
+
 |ReqNo|요구사항명|구현|
 |------|---|:---:|
 |Req-01|Java8, Spring Boot2, JPA, H2 기술 사용.|O|
@@ -19,7 +49,12 @@
  -->
 <!-- ※Req-09에서 Swagger JWT 토큰 입력 부분 미구현 => Postman 테스트로 대체. -->
 
+<a name="link_impl">  
+	
 ## 2. 구현 방법
+	
+</a>
+
 ### Installation (Req-01)
 ![스프링 초기 설정](https://user-images.githubusercontent.com/40817016/154221723-01283a95-9ca4-4bb8-abc7-ab3b5fc33f4f.png)
 
@@ -42,29 +77,76 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
-	// ETC
-	implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
-	implementation group: 'org.json', name: 'json', version: '20211205'
-	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'
-
 	// SWAGGER
 	// implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '2.9.2'
 	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-	
+
+	// thymeleaf
+    	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+    
+	// ETC
+	implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+	implementation group: 'org.json', name: 'json', version: '20211205'
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+	implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'    
+	implementation group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
+	implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
 }
 ```
 
 ### ERD
-![image](https://user-images.githubusercontent.com/40817016/150724838-9c57de2e-8f1a-440d-8abe-eb4b2da92c3d.png)
+![image](https://user-images.githubusercontent.com/40817016/154811340-c995f5ee-9af3-44d6-9afb-94d5a172d04a.png)
+
+※COL_DATE(날짜), COL_HOUR(시간) 복합키 설정하여 중복 방지 </br>
+※광고 통계 정보 초기 데이터 Insert
+
+```
+INSERT INTO AD_STATISTICS 
+(COL_DATE, COL_HOUR, REQ_CNT, RES_CNT, CTR_CNT) 
+VALUES 
+('2022-02-16', '10', 7,5,3), 
+('2022-02-16', '11', 11,12,45),
+('2022-02-16', '12', 13,24,39),
+('2022-02-16', '13', 20,34,30);
+```
+</br>
+
+### H2 URL
+![image](https://user-images.githubusercontent.com/40817016/154812524-74e2df16-bc71-48dd-a840-75415793b166.png) </br>
+http://localhost:8080/h2-console/
 
 ### Swagger URL
-http://localhost:8080/swagger-ui.html#/ <br>
+http://localhost:8080/swagger-ui.html#/ </br>
 ※Swagger JWT 토큰 입력 부분 미구현이어서 테스트는 Postman 테스트로 대체.
+http://localhost:8080/h2-console/
 
 ### 참고
-※스웨거 참고 블로그: https://antstudy.tistory.com/251 <br>
+※스웨거 참고 블로그: https://antstudy.tistory.com/251 </br>
 ※File Upload 참고: https://stackoverflow.com/questions/49845355/spring-boot-controller-upload-multipart-and-json-to-dto
+
+<a name="link_rfp">  
+	
+## 3. 테스트(JUnit) 🏆
+	
+</a>
+
+##### 3-1. 테스트 실행
+
+ > /project-recruit-fsn/src/test/java/com/project/fsn/controller/AdStatisticsControllerTest.java 실행
+
+##### 3-2. 테스트 과정
+ - Micro Service Architecture의 이해
+ - Scale Out 가능한 구조의 설계 및 구현
+
+##### 3-3. 테스트 결과
+
+
+
+
+
 
 ## 3. 검증 결과 (단위 테스트)
 |TestNo|URL|파라미터|테스트 스텝|입력 데이터|성공 결과|실패 결과|
@@ -98,5 +180,3 @@ http://localhost:8080/swagger-ui.html#/ <br>
 평소 습관대로 개발한 코드는 나중에 버그로 작용할 가능성이 크다고 생각합니다. <br> 일정 지연보다 해당 버그로 유지보수에 쏟는 시간과 비용이 더 많이 들어갈 것으로 생각합니다.
 
 
-※추가할 내용
-1. col_date, col_hour 복합키 설정
