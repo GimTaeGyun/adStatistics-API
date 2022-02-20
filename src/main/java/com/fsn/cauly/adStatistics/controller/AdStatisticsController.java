@@ -36,7 +36,7 @@ import com.fsn.cauly.adStatistics.service.AdStatisticsService;
  * FSN 카울리 > 광고 플랫폼 Rest API > 통계 조회 기능, 통계 데이터 업로드 기능
  *
  * @author gtgyun
- * @since 2022.02.16
+ * @since 2022.02.20
  */
 
 @RestController

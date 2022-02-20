@@ -20,33 +20,10 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 @SpringBootTest
 class FsnApplicationTests {
 	
-	
 
-//	@Autowired 
-//	private MockMvc mvc;
-//
-//	
 	@Test
 	void contextLoads() {
 	}
 	
-//	@Test public void indexTest() throws Exception { 
-//		mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON)) 
-//		// "/" 에 대한 request 요청 
-//		.andExpect(status().isOk()) // response 가 200 ok 일때 
-//		.andExpect((ResultMatcher) content().string(equalTo("Greetings from Spring Boot!"))); 
-//		// response로 받은 데이터가 같은지 확인 
-//	}
-//
-//		
-//	
-//	@Test public void helloTest() throws Exception { 
-//		mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON)) 
-//		// "/hello" 에 대한 request 요청 
-//		.andExpect(status().isOk()) 
-//		// response 가 200 ok 일때
-//		.andExpect((ResultMatcher) content().string(equalTo("Hello world"))); 
-//		// response로 받은 데이터가 같은지 확인 
-//	}
 }
 
