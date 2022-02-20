@@ -202,7 +202,12 @@ http://localhost:8080/swagger-ui.html#/ </br>
 - 응답 </br>
 ` 광고 요청 수 : 54, 응답 수 : 76, 클릭 수 : 113 `
 
+</br>
+
 > JUnit 테스트 결과
+
+</br>
+
 ![image](https://user-images.githubusercontent.com/40817016/154837999-62a7bee3-4ad2-46d5-90cf-114a0289638b.png)
 
 
