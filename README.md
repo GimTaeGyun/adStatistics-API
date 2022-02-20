@@ -188,7 +188,7 @@ http://localhost:8080/swagger-ui.html#/ </br>
 
 </br>
 
-- 응답
+- 업로드 결과
 
 ![image](https://user-images.githubusercontent.com/40817016/154837922-2c50ba1c-9bbe-49a6-bc42-7b5c99e10ad2.png)
 </br>
@@ -200,7 +200,7 @@ http://localhost:8080/swagger-ui.html#/ </br>
 > 4. 특정 날짜 합계 광고 통계 데이터 조회
 
 - 응답 </br>
-` 광고 요청 수 : 44, 응답 수 : 66, 클릭 수 : 103 `
+` 광고 요청 수 : 54, 응답 수 : 76, 클릭 수 : 113 `
 
 
 <a name="link_doc_restapi">  
