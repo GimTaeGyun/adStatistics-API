@@ -1,0 +1,30 @@
+{"adStatistics":[
+	{
+	    "coldate":"2022-02-16",
+		"colhour":"12",	
+		"req_cnt":"3",
+		"res_cnt":"4",
+		"ctr_cnt":"10"
+	},
+	{
+	    "coldate":"2022-02-16",
+		"colhour":"13",	
+		"req_cnt":"16",
+		"res_cnt":"20",
+		"ctr_cnt":"20"
+	},
+	{
+	    "coldate":"2022-02-16",
+		"colhour":"14",	
+		"req_cnt":"10",
+		"res_cnt":"15",
+		"ctr_cnt":"20"
+	},
+	{
+	    "coldate":"2022-02-16",
+		"colhour":"15",	
+		"req_cnt":"7",
+		"res_cnt":"20",
+		"ctr_cnt":"15"
+	}
+]}

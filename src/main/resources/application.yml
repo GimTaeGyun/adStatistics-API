@@ -1,0 +1,44 @@
+spring:
+  servlet:
+    multipart:
+      enabled: 'true'
+      location: ${java.io.tmpdir}
+      max-request-size: 215MB
+      max-file-size: 200MB
+      
+  file:
+    file.upload-dir: ./uploads
+      
+  h2:
+    console:
+      enabled:  true
+      
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      #SessiongFactory 시작 시 Drop,Create,Alter , 종료 시 Drop
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        #콘솔창 sql 보기 좋게 표현하는 설정
+        format_sql: true
+        show_sql: true
+    defer-datasource-initialization: true
+    
+
+
+logging:
+  level:
+    me.gtg: DEBUG  
+
+custom:
+  uploadfile:
+    adStatisticsJson: \\src\\main\\resources\\uploadStatistics\\adStatistics.json
+
+  
