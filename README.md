@@ -190,7 +190,7 @@ http://localhost:8080/swagger-ui.html#/ </br>
 
 - 응답
 
-![image](https://user-images.githubusercontent.com/40817016/154833094-ad250249-c61f-485b-9e65-1c0b9457099e.png)
+![image](https://user-images.githubusercontent.com/40817016/154837922-2c50ba1c-9bbe-49a6-bc42-7b5c99e10ad2.png)
 </br>
 `초기 데이터에 없는 시간대 14시, 15시의 데이터는 Insert 된 것을 확인할 수 있다. ` </br>
 `초기 데이터와 중복되는 시간대 12시, 13시의 데이터는 Update 된 것을 확인할 수 있다. `
