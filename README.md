@@ -1,7 +1,7 @@
 <a name="top">
 	
-# project_fsn
-김태균 - FSN 카울리 채용 과제 
+# Project AD Statistics Platform API
+김태균 - 광고 통계 플랫폼 API
 
 </a>
 
@@ -144,7 +144,7 @@ http://localhost:8080/swagger-ui.html#/ </br>
 
 ##### 4-1. 테스트 실행
 
- > /project-recruit-fsn/src/test/java/com/project/fsn/controller/AdStatisticsControllerTest.java 실행
+ > /project-recruit-/src/test/java/com/project//controller/AdStatisticsControllerTest.java 실행
 
 ##### 4-2. 테스트 과정
 
