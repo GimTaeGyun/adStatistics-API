@@ -1,16 +1,12 @@
-package com.fsn.cauly.adStatistics.service;
-
-import java.util.LinkedHashMap;
-import java.util.List;
+package my.toyproject.adStatistics.service;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.fsn.cauly.adStatistics.dto.AdStatisticsDto;
-import com.fsn.cauly.adStatistics.entity.AdStatistics;
-import com.fsn.cauly.adStatistics.repository.AdStatisticsRepository;
+import my.toyproject.adStatistics.dto.AdStatisticsDto;
+import my.toyproject.adStatistics.entity.AdStatistics;
+import my.toyproject.adStatistics.repository.AdStatisticsRepository;
 
 
 

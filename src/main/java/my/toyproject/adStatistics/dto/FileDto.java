@@ -1,4 +1,4 @@
-package com.fsn.cauly.adStatistics.dto;
+package my.toyproject.adStatistics.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

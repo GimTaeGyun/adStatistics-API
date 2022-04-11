@@ -1,4 +1,4 @@
-package com.project.fsn;
+package my.test;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.content;

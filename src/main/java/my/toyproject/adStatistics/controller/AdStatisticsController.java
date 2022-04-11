@@ -1,17 +1,13 @@
-package com.fsn.cauly.adStatistics.controller;
+package my.toyproject.adStatistics.controller;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.UUID;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import my.toyproject.adStatistics.service.AdStatisticsService;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,23 +20,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.fsn.cauly.adStatistics.dto.AdStatisticsDto;
-import com.fsn.cauly.adStatistics.dto.FileDto;
-import com.fsn.cauly.adStatistics.service.AdStatisticsService;
+import my.toyproject.adStatistics.dto.AdStatisticsDto;
+import my.toyproject.adStatistics.dto.FileDto;
 
 /*
  * 통계 조회 기능, 통계 데이터 업로드 기능
  */
 
 /**
- * FSN 카울리 > 광고 플랫폼 Rest API > 통계 조회 기능, 통계 데이터 업로드 기능
+ * 토이 프로젝트 > 광고 플랫폼 Rest API > 통계 조회 기능, 통계 데이터 업로드 기능
  *
  * @author gtgyun
  * @since 2022.02.20
  */
 
 @RestController
-@RequestMapping("/fsn-cauly")
+@RequestMapping("/adPlatform")
 public class AdStatisticsController {
 
 	private final AdStatisticsService adStatisticsService;

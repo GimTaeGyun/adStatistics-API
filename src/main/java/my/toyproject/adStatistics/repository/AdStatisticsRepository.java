@@ -1,14 +1,10 @@
-package com.fsn.cauly.adStatistics.repository;
-
-import java.util.List;
-import java.util.Optional;
+package my.toyproject.adStatistics.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.fsn.cauly.adStatistics.entity.AdStatistics;
-import com.fsn.cauly.adStatistics.entity.AdStatisticsKey;
+import my.toyproject.adStatistics.entity.AdStatistics;
 
 
 public interface AdStatisticsRepository extends JpaRepository<AdStatistics, Long> {

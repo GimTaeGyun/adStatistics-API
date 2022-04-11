@@ -1,17 +1,9 @@
-package com.fsn.cauly.adStatistics.dto;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+package my.toyproject.adStatistics.dto;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import org.modelmapper.ModelMapper;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fsn.cauly.adStatistics.entity.AdStatistics;
+import my.toyproject.adStatistics.entity.AdStatistics;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

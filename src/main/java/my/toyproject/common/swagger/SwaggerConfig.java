@@ -1,4 +1,4 @@
-package com.fsn.cauly.common.swagger;
+package my.toyproject.common.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,8 +37,8 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
 
         return new ApiInfoBuilder()
-                .title("FSN 카울리 광고 통계 API 서비스")
-                .description("[채용 과제] FSN 카울리 광고 통계 API")
+                .title("광고 통계 API 서비스")
+                .description("[토이 프로젝트] 광고 통계 API")
                 .version("1.0.0")
 //                .termsOfServiceUrl("https://jobis.co/")
                 .license("LICENSE")
