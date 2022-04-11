@@ -127,7 +127,7 @@ http://localhost:8080/h2-console/ </br>
 
 ### Swagger URL
 http://localhost:8080/swagger-ui.html#/ </br>
-![image](https://user-images.githubusercontent.com/40817016/154833471-f0a0c604-a925-4681-aec8-07ddbcddb190.png)
+![image](https://user-images.githubusercontent.com/40817016/162656606-e7e8df7d-e822-448d-898d-28b9533e3efc.png)
 
 
 ### 참고
@@ -208,7 +208,7 @@ http://localhost:8080/swagger-ui.html#/ </br>
 
 </br>
 
-![image](https://user-images.githubusercontent.com/40817016/154837999-62a7bee3-4ad2-46d5-90cf-114a0289638b.png)
+![image](https://user-images.githubusercontent.com/40817016/162656835-5201027d-e16f-4a44-8e55-e42a7693083b.png)
 
 
 <a name="link_doc_restapi">  
@@ -217,5 +217,7 @@ http://localhost:8080/swagger-ui.html#/ </br>
 
 </a>
 
-https://drive.google.com/drive/folders/1s7OsgB1YP-E3SwpN4COBJ-WvUW6CZKxc
+![image](https://user-images.githubusercontent.com/40817016/162657143-77a014e2-e255-4172-93cc-2cfdc24ec8ea.png)
+![image](https://user-images.githubusercontent.com/40817016/162657231-badeaeb7-aa4f-4e79-aea6-0efa8dbad132.png)
+
 
