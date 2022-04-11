@@ -144,7 +144,7 @@ http://localhost:8080/swagger-ui.html#/ </br>
 
 ##### 4-1. 테스트 실행
 
- > /project-recruit-/src/test/java/com/project//controller/AdStatisticsControllerTest.java 실행
+ > /src/test/java/com/project//controller/AdStatisticsControllerTest.java 실행
 
 ##### 4-2. 테스트 과정
 
